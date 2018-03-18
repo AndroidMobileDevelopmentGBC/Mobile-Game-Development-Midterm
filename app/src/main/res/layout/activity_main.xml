@@ -1,0 +1,89 @@
+<!---
+    * Memory Match Game Midterm
+    * Created by Diego Eduardo Camacho(STU ID# 101090467) and Cory Ronald
+    * On March 16 2018
+    * You have 6 seconds to memorize as many cards as you can
+    * Match as many pairs as you can remember before the time runs out!
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.georgebrown.game2011.card_memory_game_midterm.MainActivity">
+
+    <TextView
+        android:id="@+id/InstructionID"
+        android:layout_width="211dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Pick a card any Card"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TimeText"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Time:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InstructionID" />
+
+    <TextView
+        android:id="@+id/TimerID"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TimeText"
+        app:layout_constraintStart_toEndOf="@+id/TimeText" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeText">
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/ScoreText"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:text="Score:"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TimerID"
+        app:layout_constraintStart_toEndOf="@+id/TimerID" />
+
+    <TextView
+        android:id="@+id/ScoreID"
+        android:layout_width="71dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ScoreText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ScoreText" />
+
+</android.support.constraint.ConstraintLayout>
